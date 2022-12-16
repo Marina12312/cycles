@@ -10,6 +10,19 @@ public class Main {
         task8();
         task9();
         task10();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
+        task16();
+        task17();
+        task18();
+        task19();
+    }
+
+    private static void task19() {
+
     }
 
     private static void task1() {
@@ -66,6 +79,7 @@ public class Main {
 
     }
 
+
     private static void task8() {
         System.out.println("задача 8");
         int salary = 29000;
@@ -89,8 +103,109 @@ public class Main {
 
     private static void task10() {
         System.out.println(" задача 10");
-        for (int i=1; i<=10; i++){
-            System.out.println("2 x "+i+" = "+2*i);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("2 x " + i + " = " + 2 * i);
+        }
+    }
+
+    private static void task11() {
+        System.out.println("задача 11");
+        int salary = 15000;
+        int total = 0;
+        int i = 0;
+        while (total < 2_459_000) {
+            total = total + salary;
+            i = i + 1;
+            System.out.println("Месяц" + i + " сумма накоплений равна" + total + "рублей");
+        }
+    }
+
+    private static void task12() {
+        System.out.println("задача12");
+        int i = 0;
+        while (i < 10) {
+            i = i + 1;
+            System.out.print(" " + i);
+        }
+        System.out.println("" +
+                "");
+        for (int l = 10; l >= 1; l = l - 1) {
+            System.out.print(" " + l);
+        }
+    }
+
+
+    private static void task13() {
+        System.out.println(" задача 13");
+        int population = 12_000_000;
+        int born = 17;
+        int death = 8;
+        int year = 1;
+        while (year <= 10) {
+            int year1 = population / 1000;
+            int deathPer = death * year1;
+            int bornPer = born * year1;
+            population = (population + bornPer) - deathPer;
+            System.out.println("год" + year + " число " + population);
+            year++;
+        }
+    }
+
+    private static void task14() {
+        System.out.println(" задача 14");
+        int salary = 15_000;
+        int total = 0;
+        int i = 0;
+        while (total <= 12_000_000) {
+            total = total + total / 100*7;
+            total = total + salary;
+            i = i + 1;
+            System.out.println("месяц" + i + "накопил " + total);
+        }
+    }
+
+    private static void task15() {
+        System.out.println("задача 15");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 6 == 0) {
+                System.out.print(" " + i);
             }
         }
     }
+
+    private static void task16() {
+        System.out.println("задача 16");
+        int salary = 15000;
+        for (int i = 1; i <= 180; i++) {
+            salary += salary  *7/100;
+            if (i % 6==0)
+                    System.out.println("за месяц"+i+" накопил" + salary);
+                }
+
+
+            }
+
+    private static void task17() {
+        System.out.println(" задача 17");
+        int i = 7;
+        for (; i <= 31; i++) {
+            if (i % 7 == 0)
+                System.out.println("Сегодня пятница" + i + "-е число. Необходимо подготовить отчет ");
+        }
+    }
+
+    private static void task18() {
+        System.out.println("задача 18");
+        for (int i=1822; i<2122 ; i++){
+            if (i% 79==0)
+                System.out.println(" "+ i);
+        }
+
+
+    }
+}
+
+
+
+
+
